@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main() 
+{
+
+  // Count nr of sundays since monday 1900 
+  int totNrOfDays = 0; 
+  int startYear = 1900;
+  int endYear = 2001; 
+  int daysAYear = 365; 
+  int daysAWeek = 7;
+  
+  for (int year = startYear; year < 2001; ++year) {
+    if (year%4 == 0 || year%400 == 0) {
+      totNrOfDays = totNrOfDays + daysAYear + 1; // leap year
+    } else {
+      totNrOfDays = totNrOfDays + daysAYear;
+    }
+  }
+  
+  int nrOfSundays = totNrOfDays/daysAWeek; 
+  
+ 
+  
+  
+  
+
+}
